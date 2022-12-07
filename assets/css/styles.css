@@ -4,6 +4,8 @@ body {
   color: #ffffff;
 }
 
+/* * */
+
 /* Header */
 
 .container-header {
@@ -49,10 +51,26 @@ body {
   -webkit-text-stroke: 1px var(--animation-color);
 }
 
-.button:hover .hover-text {
+.hover-text {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: transparent;
+  border-left: 1px solid #000;
+  animation: escribir 5s steps(30) infinite alternate;
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
 /* Header */
 
 /* Hero */
