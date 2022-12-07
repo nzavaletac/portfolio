@@ -273,6 +273,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .hero-container {
+    padding-top: 300px;
+  }
 }
 
 /* Hero */
