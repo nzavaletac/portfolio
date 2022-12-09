@@ -22,7 +22,9 @@
 
 body {
   background-color: var(--bg-light);
-  font-family: "Poppins", sans-serif !important;
+  /* font-family: "Poppins", sans-serif !important; */
+  /* font-family: "Press Start 2P", cursive; */
+  font-family: "Space Mono", monospace;
 }
 
 /* * */
@@ -41,7 +43,7 @@ body {
 
 .button {
   margin: 0;
-  height: auto;
+  height: 100%;
   background: transparent;
   padding: 0;
   border: none;
@@ -53,7 +55,9 @@ body {
   font-size: var(--fs-size);
   position: relative;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif !important;
+  /* font-family: "Poppins", sans-serif !important; */
+  /* font-family: "Press Start 2P", cursive; */
+  font-family: "Space Mono", monospace;
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
@@ -84,7 +88,9 @@ body {
 
 .btn-contacto {
   color: var(--text-dark);
-  font-family: "Poppins", sans-serif !important;
+  /* font-family: "Poppins", sans-serif !important; */
+  /* font-family: "Press Start 2P", cursive; */
+  font-family: "Space Mono", monospace;
 }
 
 @keyframes escribir {
