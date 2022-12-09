@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>nzavaletac</title>
   </head>
@@ -21,7 +26,7 @@
         >
       </button>
       <div class="btn-contacto">
-        <a class="fancy" href="#">
+        <a class="fancy" href="#contact">
           <span class="top-key"></span>
           <span class="text">Contáctame</span>
           <span class="bottom-key-1"></span>
@@ -31,7 +36,7 @@
     </nav>
 
     <section class="hero-container">
-      <div class="content">
+      <div class="hero-content">
         <div class="row">
           <img
             src="https://i.ibb.co/pPGbmWg/profile-img.png"
@@ -46,8 +51,8 @@
         </div>
         <div class="row">
           <p class="hero-subtitle">
-            Soy un desarollador web y me encanta la programación y escuchar
-            música
+            Hola, Soy <b>Noe</b>. Soy un Desarollador Web Full-Stack JavaScript.
+            Tengo 28 años y desde siempre fuí amante de la tecnología.
           </p>
         </div>
 
@@ -56,6 +61,89 @@
         </div>
       </div>
     </section>
-    <footer class="footer-container"></footer>
+
+    <section class="contact-container" id="contact">
+      <div class="contact-content">
+        <h1>Contáctame</h1>
+      </div>
+      <form
+        action="https://formsubmit.co/c2fe831e3a2ec6dea25f3329da7371ed"
+        method="POST"
+        class="contact-content"
+      >
+        <input name="Nombres" type="text" class="input" placeholder="Nombres" />
+        <input name="Email" type="text" class="input" placeholder="Email" />
+        <input
+          name="Telefono"
+          type="text"
+          class="input"
+          placeholder="Número de teléfono"
+        />
+        <input
+          name="Empresa"
+          type="text"
+          class="input"
+          placeholder="Empresa: (Opcional)"
+        />
+        <textarea
+          name="Mensaje"
+          class="input"
+          placeholder="Cuéntame algo más de tu proyecto."
+        ></textarea>
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/index.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <button class="" type="submit">Enviar Mensaje</button>
+      </form>
+    </section>
+
+    <footer class="footer-container">
+      <div class="column">
+        <a href="https://github.com/nzavaletac" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/noe-zavaleta-cardeña/"
+          target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+      </div>
+
+      <div class="column">
+        <small>
+          <script type="text/javascript">
+            copyright = new Date();
+            anioActual = copyright.getFullYear();
+            document.write("© " + anioActual);
+          </script>
+          Todos los derechos reservados.
+        </small>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/337034b872.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

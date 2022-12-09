@@ -13,10 +13,15 @@
   --text-dark: #1a1a1a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 /*  */
 
@@ -24,7 +29,7 @@ body {
   background-color: var(--bg-light);
   /* font-family: "Poppins", sans-serif !important; */
   /* font-family: "Press Start 2P", cursive; */
-  font-family: "Space Mono", monospace;
+  /* font-family: "Space Mono", monospace; */
 }
 
 /* * */
@@ -215,10 +220,11 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
-.content {
-  height: calc(100vh - 100px);
+.hero-content {
+  width: 50%;
 }
 
 .row {
@@ -249,10 +255,75 @@ body {
 
 /* Hero */
 
+/* Contact */
+.contact-container {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.contact-content {
+  width: 60%;
+  padding: 0px 100px;
+}
+
+.contact-content h1 {
+  font-size: 2rem;
+}
+
+.input {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #cacaca;
+  border-radius: 2px;
+  height: auto;
+  outline: none;
+  margin-top: 10px;
+  font-family: "Space Mono", monospace;
+}
+
+.input:focus {
+  border: 1px solid var(--text-dark);
+}
+
+.contact-container button {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-container button:hover {
+  cursor: pointer;
+}
+
+/* Contact */
+
 /* Footer */
 
 .footer-container {
   background-color: var(--bg-dark);
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-light);
+  padding: 20px 0px;
+}
+
+.column a {
+  font-size: 30px;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.column a:hover {
+  color: #40cfff;
 }
 
 /* Footer */
@@ -279,6 +350,17 @@ body {
   .programmer {
     width: 90%;
   }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  .contact-content {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+  }
   .button {
     font-size: 2.5em;
   }
@@ -294,6 +376,16 @@ body {
   .programmer {
     width: 90%;
   }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  .contact-content {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -303,6 +395,16 @@ body {
   .programmer {
     width: 60%;
   }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+    padding: 0px 50px;
+  }
+  .contact-content {
+    width: 100%;
+    text-align: center;
+    padding: 0px 50px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -311,6 +413,16 @@ body {
   }
   .programmer {
     width: 60%;
+  }
+  .hero-content {
+    width: 70%;
+    text-align: center;
+    padding: 0px 50px;
+  }
+  .contact-content {
+    width: 50%;
+    text-align: center;
+    padding: 0px 50px;
   }
 }
 
