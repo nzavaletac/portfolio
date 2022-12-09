@@ -267,11 +267,16 @@ body {
 
 .contact-content {
   width: 60%;
-  padding: 0px 100px;
+  padding: 30px 100px;
 }
 
 .contact-content h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 20px 0px;
+}
+
+.contact-content p {
+  font-size: 1.5em;
 }
 
 .input {
