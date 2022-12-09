@@ -3,6 +3,7 @@
 :root {
   --bg-light: #ffffff;
   --bg-dark: #1a1a1a;
+  --bg-light-blue: #60d4ea;
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   /* --animation-color: #37ff8b; */
@@ -175,7 +176,7 @@ body {
 
 .fancy:hover {
   color: var(--text-light);
-  background: var(--bg-dark);
+  background-color: var(--bg-dark);
 }
 
 .fancy:hover::before {
@@ -236,7 +237,18 @@ body {
 
 .programmer {
   width: 50%;
+  margin-top: 40px;
 }
+
+/* Hero */
+
+/* Footer */
+
+.footer-container {
+  background-color: var(--bg-dark);
+}
+
+/* Footer */
 
 /* MediaQueries */
 @media (max-width: 575.98px) {
@@ -259,6 +271,9 @@ body {
   }
   .programmer {
     width: 90%;
+  }
+  .button {
+    font-size: 2.5em;
   }
 }
 
@@ -293,6 +308,9 @@ body {
   section {
     text-align: center;
   }
+  .programmer {
+    width: 60%;
+  }
 }
 
-/* Hero */
+/* MediaQueries */
