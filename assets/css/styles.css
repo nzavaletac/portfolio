@@ -55,7 +55,7 @@ body {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif !important;
   color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
+  /* -webkit-text-stroke: 1px var(--text-stroke-color); */
 }
 
 .hover-text {
