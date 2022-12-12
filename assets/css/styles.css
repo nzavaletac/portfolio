@@ -4,13 +4,23 @@
   --bg-light: #f5f6f7;
   --bg-dark: #1a1a1a;
   --bg-light-blue: #60d4ea;
+
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
-  /* --animation-color: #37ff8b; */
+
   --animation-color: #1a1a1a;
   --fs-size: 2em;
   --text-light: #ffffff;
   --text-dark: #1a1a1a;
+
+  --black: #303030;
+  --dark-gray: #414141;
+  --gray: #919191;
+  --light-gray: #d5d5d5;
+  --bright-gray: #ededed;
+  --off-white: #f7f8fa;
+  --white: #f8f8f8;
+  --blue: #61c6ff;
 }
 
 html {
@@ -21,12 +31,15 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Space Mono", monospace;
+  /* font-family: "Space Mono", monospace; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Press Start 2P", cursive; */
+  font-family: "acumin-pro", sans-serif;
 }
 /*  */
 
 body {
-  background-color: var(--bg-light);
+  background-color: var(--white);
   /* font-family: "Poppins", sans-serif !important; */
   /* font-family: "Press Start 2P", cursive; */
   /* font-family: "Space Mono", monospace; */
@@ -41,7 +54,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding: 20px 0px;
-  background-color: var(--bg-light);
+  background-color: var(--white);
   min-height: 90px;
   width: 100%;
 }
@@ -72,7 +85,7 @@ body {
   position: absolute;
   box-sizing: border-box;
   content: attr(data-text);
-  color: var(--animation-color);
+  color: var(--black);
   width: 0%;
   inset: 0;
   border-right: var(--border-right) solid var(--animation-color);
@@ -92,7 +105,7 @@ body {
 }
 
 .btn-contacto {
-  color: var(--text-dark);
+  color: var(--dark);
   /* font-family: "Poppins", sans-serif !important; */
   /* font-family: "Press Start 2P", cursive; */
   font-family: "Space Mono", monospace;
@@ -112,7 +125,7 @@ body {
   border: 2px solid var(--text-dark);
   border-radius: 0;
   box-sizing: border-box;
-  color: var(--text-light);
+  color: var(--white);
   cursor: pointer;
   display: inline-block;
   /* float: right; */
@@ -162,7 +175,7 @@ body {
   top: -2px;
   left: 0.625rem;
   position: absolute;
-  background: var(--bg-light);
+  background: var(--white);
   transition: width 0.5s ease-out, left 0.3s ease-out;
 }
 
@@ -172,7 +185,7 @@ body {
   right: 1.875rem;
   bottom: -2px;
   position: absolute;
-  background: var(--bg-light);
+  background: var(--white);
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
@@ -182,22 +195,22 @@ body {
   right: 0.625rem;
   bottom: -2px;
   position: absolute;
-  background: var(--bg-light);
+  background: var(--white);
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
 .fancy:hover {
-  color: var(--text-light);
+  color: var(--white);
   background-color: var(--bg-dark);
 }
 
 .fancy:hover::before {
   width: 0.9375rem;
-  color: var(--text-light);
+  color: var(--white);
 }
 
 .fancy:hover .text {
-  color: var(--text-light);
+  color: var(--white);
   padding-left: 1.5em;
 }
 
@@ -236,11 +249,33 @@ body {
 
 .hero-title {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: var(--dark-gray);
+  font-family: "Recife Display Web", cursive;
 }
 
 .hero-subtitle {
   font-size: 20px;
+  color: var(--gray);
+}
+
+.hero-contact {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.hero-contact:hover {
+  border-top: 0px;
+  border-right: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  border-top: 0px;
+  padding: 6px;
+}
+
+.hero-contact::after {
+  content: "→";
+  margin-left: 5px;
 }
 
 .profile-img {
@@ -250,33 +285,43 @@ body {
 
 .programmer {
   width: 70%;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* Hero */
 
+/* About me */
+
+.about-me {
+  background-color: var(--light-gray);
+  height: calc(100vh - 0px);
+}
+
+/* About me */
+
 /* Contact */
 .contact-container {
-  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0px;
 }
 
 .contact-content {
   width: 60%;
-  padding: 30px 100px;
+  padding: 10px 100px;
 }
 
 .contact-content h1 {
   font-size: 2.5rem;
   padding: 20px 0px;
+  color: var(--black);
+  font-family: "Recife Display Web", cursive;
 }
 
 .contact-content p {
-  font-size: 1.5em;
+  font-size: 20px;
+  color: var(--gray);
 }
 
 .input {
@@ -287,23 +332,32 @@ body {
   height: auto;
   outline: none;
   margin-top: 10px;
-  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  /* font-family: "Space Mono", monospace; */
+  font-family: "acumin-pro", sans-serif;
 }
 
 .input:focus {
-  border: 1px solid var(--text-dark);
+  border: 1px solid var(--black);
 }
 
 .contact-container button {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  background-color: var(--black);
+  color: var(--gray);
   padding: 15px;
   width: 100%;
   margin-top: 10px;
+  font-size: 0.8rem;
 }
 
 .contact-container button:hover {
   cursor: pointer;
+  color: var(--light-gray);
+}
+
+.contact-container button::after {
+  content: "→";
+  margin-left: 5px;
 }
 
 /* Contact */
@@ -311,24 +365,24 @@ body {
 /* Footer */
 
 .footer-container {
-  background-color: var(--bg-dark);
+  background-color: var(--white);
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--text-light);
+  color: var(--gray);
   padding: 20px 0px;
 }
 
 .column a {
   font-size: 30px;
-  color: var(--text-light);
+  color: var(--gray);
   text-decoration: none;
 }
 
 .column a:hover {
-  color: #40cfff;
+  color: var(--blue);
 }
 
 /* Footer */
