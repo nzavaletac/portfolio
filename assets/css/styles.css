@@ -295,7 +295,8 @@ body {
 /* Portfolio */
 
 .portfolio {
-  background-color: var(--light-gray);
+  /* background-color: var(--light-gray); */
+  background-color: var(--bright-gray);
   /* height: calc(100vh - 0px); */
   padding: 50px 100px;
 }
