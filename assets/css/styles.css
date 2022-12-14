@@ -25,6 +25,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: "eurostile", sans-serif;
 }
 
 * {
@@ -34,7 +35,7 @@ html {
   /* font-family: "Space Mono", monospace; */
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Press Start 2P", cursive; */
-  font-family: "acumin-pro", sans-serif;
+  /* font-family: "acumin-pro", sans-serif; */
 }
 /*  */
 
@@ -75,7 +76,8 @@ body {
   text-transform: uppercase;
   /* font-family: "Poppins", sans-serif !important; */
   /* font-family: "Press Start 2P", cursive; */
-  font-family: "Space Mono", monospace;
+  /* font-family: "Space Mono", monospace; */
+  font-family: "eurostile", sans-serif;
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
@@ -108,7 +110,8 @@ body {
   color: var(--dark);
   /* font-family: "Poppins", sans-serif !important; */
   /* font-family: "Press Start 2P", cursive; */
-  font-family: "Space Mono", monospace;
+  /* font-family: "Space Mono", monospace; */
+  font-family: "eurostile", sans-serif;
 }
 
 @keyframes escribir {
@@ -379,6 +382,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
+  padding: 100px 0px;
 }
 
 .contact-subcontainer {
@@ -417,7 +422,8 @@ body {
   margin-top: 10px;
   font-size: 0.8rem;
   /* font-family: "Space Mono", monospace; */
-  font-family: "acumin-pro", sans-serif;
+  /* font-family: "acumin-pro", sans-serif; */
+  font-family: "eurostile", sans-serif;
 }
 
 .input:focus {
@@ -431,6 +437,7 @@ body {
   width: 100%;
   margin-top: 10px;
   font-size: 0.8rem;
+  font-family: "eurostile", sans-serif;
 }
 
 .contact-container button:hover {
