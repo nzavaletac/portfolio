@@ -329,6 +329,7 @@ body {
   width: 100%;
   display: block;
   transition: all 0.2s ease;
+  
 }
 .overlay {
   transition: all 0.2s ease;
@@ -369,10 +370,18 @@ body {
   font-size: 1.3rem;
 }
 
-.tec-container ion-icon:hover {
+.tec-container i {
+  padding: 2px 5px;
+  font-size: 1.3rem;
+}
+
+.tec-container i:hover {
   color: var(--blue);
 }
 
+.tec-container ion-icon:hover {
+  color: var(--blue);
+}
 /* Portfolio */
 
 /* Contact */
