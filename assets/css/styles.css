@@ -360,9 +360,14 @@ body {
 .overlay .icon-container {
   display: flexbox;
 }
+
 .tec-container ion-icon {
   padding: 2px 5px;
   font-size: 1.3rem;
+}
+
+.tec-container ion-icon:hover {
+  color: var(--blue);
 }
 
 /* Portfolio */
@@ -453,6 +458,10 @@ body {
 
 .column a:hover {
   color: var(--blue);
+}
+
+.copyright {
+  align-content: center;
 }
 
 /* Footer */
