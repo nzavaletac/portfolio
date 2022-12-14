@@ -251,7 +251,7 @@ body {
   font-weight: 700;
   font-size: 3rem;
   color: var(--dark-gray);
-  font-family: "Recife Display Web", cursive;
+  /* font-family: "Recife Display Web", cursive; */
 }
 
 .hero-subtitle {
@@ -301,10 +301,10 @@ body {
   padding: 50px 100px;
 }
 .portfolio h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 30px;
   color: var(--black);
-  font-family: "Recife Display Web", cursive;
+  /* font-family: "Recife Display Web", cursive; */
 }
 .portfolio p {
   font-size: 20px;
@@ -383,7 +383,15 @@ body {
 
 .contact-subcontainer {
   width: 100%;
-  padding: 10px 100px;
+  padding-left: 200px;
+  padding-right: 15px;
+  text-align: left;
+}
+
+.contact-subcontainer1 {
+  width: 100%;
+  padding-right: 200px;
+  padding-left: 15px;
   text-align: left;
 }
 
@@ -391,7 +399,7 @@ body {
   font-size: 2.5rem;
   padding: 20px 0px;
   color: var(--black);
-  font-family: "Recife Display Web", cursive;
+  /* font-family: "Recife Display Web", cursive; */
 }
 
 .contact-content p {
@@ -501,6 +509,9 @@ body {
     text-align: center;
     padding: 30px;
   }
+  .contact-subcontainer1 {
+    padding: 30px;
+  }
   .button {
     font-size: 2.5em;
   }
@@ -536,6 +547,9 @@ body {
     text-align: center;
     padding: 30px;
   }
+  .contact-subcontainer1 {
+    padding: 30px;
+  }
   .portfolio {
     padding: 50px 0px;
   }
@@ -569,6 +583,9 @@ body {
     text-align: center;
     padding: 50px;
   }
+  .contact-subcontainer1 {
+    padding: 30px;
+  }
   .portfolio {
     padding: 50px 0px;
   }
@@ -600,6 +617,9 @@ body {
   }
   .contact-subcontainer {
     text-align: center;
+  }
+  .contact-subcontainer1 {
+    padding: 30px;
   }
   .portfolio {
     padding: 50px 0px;
