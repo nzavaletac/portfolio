@@ -329,7 +329,6 @@ body {
   width: 100%;
   display: block;
   transition: all 0.2s ease;
-  
 }
 .overlay {
   transition: all 0.2s ease;
@@ -474,6 +473,15 @@ body {
   padding: 20px 0px;
 }
 
+.scroll {
+  color: var(--gray);
+  font-size: 2rem;
+}
+
+.scroll:hover {
+  color: black;
+}
+
 .column a {
   font-size: 30px;
   color: var(--gray);
@@ -481,7 +489,7 @@ body {
 }
 
 .column a:hover {
-  color: var(--blue);
+  color: var(--black);
 }
 
 .copyright {
